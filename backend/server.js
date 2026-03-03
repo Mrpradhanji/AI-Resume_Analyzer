@@ -16,8 +16,9 @@ const server = http.createServer(app);
 
 const allowedOrigins = [
   "https://ai-document-analyzer-4nx3.vercel.app",
-  "https://ai-resume-analyzer-w742.onrender.com",        
-  "http://localhost:5173",                       
+  "https://ai-resume-analyzer-w742.onrender.com",
+  "https://ai-resume-analyzer-8gjy28md5-mrpradhanjis-projects.vercel.app",
+  "http://localhost:5173",
 ];
 
 app.use(
