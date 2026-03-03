@@ -7,7 +7,7 @@ let refreshSubscribers = [];
 
 const subscribeTokenRefresh = (cb) => refreshSubscribers.push(cb);
 const onRrefreshed = (token) => refreshSubscribers.map((cb) => cb(token));
-const API_URL =  "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000/api";
 
 const api = axios.create({ baseURL: API_URL });
 
