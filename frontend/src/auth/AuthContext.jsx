@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { useAuthStore } from "@/stores/authStore";
 import { request } from "@/utils/api";
 
-const API_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+const API_URL = import.meta.env.VITE_BACKEND_URL || "https://ai-resume-analyzer-w742.onrender.com";
 
 const AuthContext = createContext(null);
 
