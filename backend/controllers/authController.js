@@ -7,6 +7,7 @@ const genToken = (id) =>
   jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: "7d" });
 
 export const register = async (req, res, next) => {
+  console.log("Register endpoint hit"); // This line should be here
   try {
     const { name, email, password } = req.body;
     if (!name || !email || !password)
